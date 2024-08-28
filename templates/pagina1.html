@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestion de Vuelos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <header id="menu">
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-fluid" id="navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="navbar-brand text-secondary" href="#">Consultar vuelos disponibles/reservar</a>
+                                <a class="navbar-brand text-secondary" href="#">Ver reservas realizadas</a>
+                                <a class="navbar-brand text-secondary" href="#">Eliminar reservas realizadas</a>
+                                <a class="navbar-brand text-secondary" href="#">Registrar usuario</a>          
+                            </div>
+                        </div>
+                        <script src="../js/bootstrap.bundle.min.js"></script>
+                    </div>
+                </nav>
+            </header>
+          <div class="text-center text-light mt-4 px-4">
+            <h1>Compañía Argentina</h1>
+            <h2>Gestión de Vuelos</h2>    
+          </div>
+          <section class="container-md mt-5 px-5 mb-6">
+              <form action="pagina2.html" class="">
+                  <div class="bg-primary-subtle p-5 rounded-3" id="borde">
+                  <fieldset class="">
+                      <legend class="pb-3">Consultar Vuelos Disponibles</legend>
+                      <label class="form-label" for="origen">Origen</label>
+                      <select class="form-select mb-3" name="origen" id="origen">
+                          <option value="Elegir">Elegir...</option>
+                          <option value="Cordoba">Córdoba</option>
+                          <option value="Mendoza">Mendoza</option>
+                          <option value="Tucuman">Tucumán</option>
+                      </select>
+                      <label class="form-label" for="destino">Destino</label>
+                      <select class="form-select mb-3" name="destino" id="destino">
+                          <option value="Elegir">Elegir...</option>
+                          <option value="Cordoba">Córdoba</option>
+                          <option value="Mendoza">Mendoza</option>
+                          <option value="Tucuman">Tucumán</option>
+                      </select>
+                      <label class="form-label" for="fechaVuelo">Fecha de vuelo</label>
+                      <input type="date" class="form-control mb-3" name="fechaVuelo" id="fechaVuelo" required>    
+                      <div class="btn-toolbar justify-content-between mt-5" role="toolbar" aria-label="Toolbar with button groups">
+                          <input class="btn btn-primary col-4" type="submit" value="Buscar">
+                          <input class="btn btn-primary col-4" type="reset" value="Cancelar">    
+                      </div>
+                  </fieldset>
+                  </div>
+              </form>
+          </section>
+          <footer class="bg-dark fixed-bottom mt-5">
+              <p class="text-secondary m-0 p-4">Sitio Oficial de Compañía Argentina-2017</p>
+          </footer>
+        </div>
+    </body>
+</html>

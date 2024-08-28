@@ -1,0 +1,35 @@
+:root {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-image: url(../Img/avion.jpg);
+    background-color: #7C93C3;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+header#menu a:hover {
+    color: white !important;
+}
+header#menu a {
+    margin: 0 16px;
+    font-size: 1rem;
+}
+input#botn {
+    justify-content: flex-end;
+}
+@media (min-width: 992px) {
+    div#navbarCollapse button {
+        display: none;
+    }
+    header#menu nav {
+        height: 56px;
+    }
+}
+@media (max-width: 991px) {
+    header#menu button {
+        display: initial;
+        background-color: rgb(102, 102, 102);
+        padding: 2px 6px;
+    }
+}

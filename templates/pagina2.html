@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestion de Reserva</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <div class="text-center text-light mt-4 px-4">
+                <h1>Formulario de Reserva</h1>
+            </div>
+            <section class="container-md mt-5 px-5" id="cuerpo">
+                <form action="pagina2.html">
+                    <div  class="bg-primary-subtle p-5 rounded-3">
+                        <fieldset>
+                            <legend class="pb-3">Registro de Reserva</legend>
+                            <label class="form-label" for="origen">Origen</label>
+                            <select class="form-select mb-3" name="origen" id="origen" disabled>
+                                <option value="Elegir">Elegir...</option>
+                                <option value="Cordoba">Córdoba</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Tucuman">Tucumán</option>
+                            </select>
+                            <label class="form-label" for="destino">Destino</label>
+                            <select class="form-select mb-3" name="destino" id="destino" disabled>
+                                <option value="Elegir">Elegir...</option>
+                                <option value="Cordoba">Córdoba</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Tucuman">Tucumán</option>
+                            </select>
+                            <label class="form-label" for="fechaVuelo">Fecha de vuelo</label>
+                            <input class="form-control mb-3" type="date" name="fechaVuelo" id="fechaVuelo" disabled>
+                            <label class="form-label" for="horaVuelo">Hora de vuelo</label>
+                            <input class="form-control mb-3" type="time" name="horaVuelo" id="horaVuelo" disabled>
+                            <label class="form-label" for="clase">Clase</label>
+                            <select class="form-select mb-3" name="clase" id="clase">
+                                <option value="Elegir">Elegir...</option>
+                                <option value="ejecutiva">Ejecutiva</option>
+                                <option value="economica">Económica</option>
+                            </select>
+                            <label class="form-label" for="cantidadPasajes">Cantidad de Pasajes</label>
+                            <input class="form-control mb-3" type="number" name="cantidadPasajes" id="cantidadPasajes" min="1" max="50" required>
+                            <label class="form-label" for="ubicacion">Ubicación</label>
+                            <select class="form-select mb-3" name="ubicacion" id="ubicacion">
+                                <option value="Elegir">Elegir...</option>
+                                <option value="ventanilla">Ventanilla</option>
+                                <option value="centro">Centro</option>
+                                <option value="pasillo">Pasillo</option>
+                            </select>
+                            <label class="form-label" for="nroSilla">Nro de Silla</label>
+                            <input class="form-control mb-3" type="number" name="nroSilla" id="nroSilla" min="1" max="50">
+                            <label class="form-label" for="apellidoNombre">Apellido y Nombre</label>
+                            <input class="form-control mb-3" type="text" name="apellidoNombre" id="apellidoNombre" maxlength="100" required>
+                            <label class="form-label" for="dni">DNI</label>
+                            <input class="form-control mb-3" type="number" name="dni" id="dni" min="0" max="99999999" required>
+                            <label class="form-label" for="fechaNacimiento">Fecha de Nacimiento</label>
+                            <input class="form-control mb-3" type="date" name="fechaNacimiento" id="fechaNacimiento">
+                            <label class="form-label">Sexo</label>
+                            <div class="radios">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">F</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">M</label>
+                                </div>
+                            </div>
+                            <div class="btn-toolbar justify-content-between mt-5" role="toolbar" aria-label="Toolbar with button groups">
+                                <input class="btn btn-primary col-4" type="submit" value="Aceptar">
+                                <input class="btn btn-primary col-4" type="reset" value="Cancelar">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            <footer class="bg-dark  mt-5">
+                <p class="text-secondary m-0 p-4">Sitio Oficial de Compañía Argentina-2024</p>
+            </footer>
+        </div>
+    </body>
+</html>
